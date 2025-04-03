@@ -35,3 +35,5 @@ Run as:
 ```
 python fingerprints.py data/ChEMBL_set.sdf  data/arr_py.npy 3 2048
 ```
+## Acknowledgment
+The files ```cnpy.cpp``` and ```cnpy.h``` used for loading/saving C++ data as numpy ```.npy``` files were copied from the **cnpy** library https://github.com/rogersce/cnpy
