@@ -26,7 +26,7 @@ set(RDKit_THREAD_LIBS Threads::Threads)
 
 set( LIBS  Boost::iostreams ${RDKit_THREAD_LIBS} ${CAIRO_LIBRARIES} z )
 
-add_executable(test-rdkit fingerprints.cpp cnpy.cpp)
+add_executable(morganfp fingerprints.cpp cnpy.cpp)
 target_link_libraries(test-rdkit ${LIBS} ${RDKit_LIBS})
 
 message(${LIBS})
