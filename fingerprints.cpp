@@ -7,9 +7,6 @@
 
 int main(int argc, char* argv[])
 {
-    // const unsigned int radius = 3;
-    // const unsigned int nbits = 2048;
-
     if (argc != 5) {
         std::cerr << "Usage: " << argv[0] << " <input sdf file> <output npy file> <Morgan FP radius> <Morgan FP bits>\n";
         return 1;
