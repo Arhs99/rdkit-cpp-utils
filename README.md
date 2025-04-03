@@ -1,7 +1,7 @@
 # rdkit-cpp-utils
 
 ## Description
-rdkit is the goto toolkit for anything related to cheminformatics and data science applications in Chemistry. It is mostly used in python which shouldn't be uderestimated performance-wise. Still for large amounts of data getting some help from C++ which is the native language of rdkit makes sense. Some good sources to start are: https://www.rdkit.org/docs/GettingStartedInC%2B%2B.html and https://github.com/iwatobipen/rdkit_cpp/tree/main. The aim of this repo is to collect some standard functionality in C++ when increased efficiency is required.
+rdkit is the goto toolkit for anything related to cheminformatics and data science applications in Chemistry. It is mostly used in python which shouldn't be uderestimated performance-wise. Still for large amounts of data getting some help from C++ which is the native language of rdkit makes sense. A couple of good sources to start are: https://www.rdkit.org/docs/GettingStartedInC%2B%2B.html and https://github.com/iwatobipen/rdkit_cpp/tree/main. The aim of this repo is to collect some standard functionality in C++ when increased efficiency is required.
 
 ## Installation
 This is the hard and less fun part. This is what worked for me:
