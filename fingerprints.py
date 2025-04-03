@@ -8,7 +8,7 @@ def morgan_fp(sdf_file: str, out_npy: str, nbits:int=2048, radius:int=3):
     mfpgen = rdFingerprintGenerator.GetMorganGenerator(radius=radius,fpSize=nbits)
     suppl = Chem.SDMolSupplier(sdf_file)
     fps = list(mfpgen.GetFingerprint(m) for m in suppl if m is not None)
-    npfps = np.array(fps).astype(np.uint8) # by default numpy will use dtype=int64 which is wasteful as only 0,1 are stored
+    npfps = np.array(fps).astype(np.uint8) # by default numpy will use dtype=int64. uint8 is more efficient as only {0, 1} are used.
     np.save(out_npy, npfps)
 
 if __name__ == '__main__':
